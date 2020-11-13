@@ -38,7 +38,10 @@
       "name": "Declaration Keywords",
       "scope": [
         "keyword.default",
+        "keyword.operator.new",
         "keyword.storage",
+        "storage.modifier",
+        "storage.type",
         "storage.type.function"
       ],
       "settings": {
@@ -64,9 +67,11 @@
       }
     },
     {
-      "name": "Number",
+      "name": "Number/Literals",
       "scope": [
-        "constant.numeric"
+        "constant.numeric",
+        "constant.language",
+        "keyword.constant.bool"
       ],
       "settings": {
         "foreground": "#b77ee0"
@@ -76,7 +81,8 @@
       "name": "Type",
       "scope": [
         "entity.name.type",
-        "keyword.type"
+        "keyword.type",
+        "support.type.primitive.ts"
       ],
       "settings": {
         "foreground": "#00afaf"
@@ -85,16 +91,18 @@
     {
       "name": "Type",
       "scope": [
-        "keyword.operator"
+        "keyword.operator",
+        "meta.type.annotation"
       ],
       "settings": {
-        "foreground": "#00afaf"
+        "foreground": "#bbbbbb"
       }
     },
     {
       "name": "Control Flow",
       "scope": [
-        "keyword.control"
+        "keyword.control",
+        "keyword.operator.expression.is.ts"
       ],
       "settings": {
         "foreground": "#47B5E7"
@@ -152,13 +160,20 @@
     {
       "name": "Markdown Inline Code Block",
       "scope": [
-        "markup.inline.raw.string.markdown",
-        "markup.fenced_code.block.markdown",
-        "markup.raw.block.fenced.markdown"
+        "markup.inline.raw.string.markdown"
       ],
       "settings": {
         "background": "#00FF00ff",
         "foreground": "#e06c75"
+      }
+    },
+    {
+      "name": "JSON key",
+      "scope": [
+        "support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#47B5E7"
       }
     }
   ]

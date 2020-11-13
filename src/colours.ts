@@ -22,6 +22,7 @@ type Token =
   | "doc_comment"
   | "number_literal"
   | "operator"
+  | "source"
   | "string"
   | "type"
 
@@ -50,7 +51,8 @@ export const syntax_colours: Record<Token, Colour> = {
   decl_keyword: Colour.red,
   doc_comment: Colour.blue,
   number_literal: Colour.purple,
-  operator: Colour.turquoise,
+  operator: Colour.light_grey,
+  source: Colour.light_grey,
   string: Colour.golden,
   type: Colour.turquoise,
 }
@@ -64,3 +66,5 @@ export const markdown_colours: Record<MarkdownElement, Colour> = {
   link: Colour.blue,
   codeBg: Colour.dark_grey,
 }
+
+export const json_key = Colour.blue

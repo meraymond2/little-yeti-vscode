@@ -1,4 +1,9 @@
-import { editor_colours, syntax_colours, markdown_colours } from "./colours"
+import {
+  editor_colours,
+  syntax_colours,
+  markdown_colours,
+  json_key,
+} from "./colours"
 
 export const generate_theme_json = () => ({
   name: "Little Yeti",
@@ -35,7 +40,14 @@ export const generate_theme_json = () => ({
 
     {
       name: "Declaration Keywords",
-      scope: ["keyword.default", "keyword.storage", "storage.type.function"],
+      scope: [
+        "keyword.default",
+        "keyword.operator.new",
+        "keyword.storage",
+        "storage.modifier",
+        "storage.type",
+        "storage.type.function",
+      ],
       settings: {
         foreground: syntax_colours.decl_keyword,
       },
@@ -55,29 +67,29 @@ export const generate_theme_json = () => ({
       },
     },
     {
-      name: "Number",
-      scope: ["constant.numeric"],
+      name: "Number/Literals",
+      scope: ["constant.numeric", "constant.language", "keyword.constant.bool"],
       settings: {
         foreground: syntax_colours.number_literal,
       },
     },
     {
       name: "Type",
-      scope: ["entity.name.type", "keyword.type"],
+      scope: ["entity.name.type", "keyword.type", "support.type.primitive.ts"],
       settings: {
         foreground: syntax_colours.type,
       },
     },
     {
       name: "Type",
-      scope: ["keyword.operator"],
+      scope: ["keyword.operator", "meta.type.annotation"],
       settings: {
         foreground: syntax_colours.operator,
       },
     },
     {
       name: "Control Flow",
-      scope: ["keyword.control"],
+      scope: ["keyword.control", "keyword.operator.expression.is.ts"],
       settings: {
         foreground: syntax_colours.control_flow,
       },
@@ -124,14 +136,18 @@ export const generate_theme_json = () => ({
     },
     {
       name: "Markdown Inline Code Block",
-      scope: [
-        "markup.inline.raw.string.markdown",
-        "markup.fenced_code.block.markdown",
-        "markup.raw.block.fenced.markdown",
-      ],
+      scope: ["markup.inline.raw.string.markdown"],
       settings: {
         background: "#00FF00ff", // broken??
         foreground: markdown_colours.heading,
+      },
+    },
+    /* JSON */
+    {
+      name: "JSON key",
+      scope: ["support.type.property-name.json"],
+      settings: {
+        foreground: json_key,
       },
     },
   ],
