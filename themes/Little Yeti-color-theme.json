@@ -99,6 +99,67 @@
       "settings": {
         "foreground": "#47B5E7"
       }
+    },
+    {
+      "name": "Markdown Heading",
+      "scope": [
+        "markup.heading.markdown"
+      ],
+      "settings": {
+        "foreground": "#e06c75",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Bold",
+      "scope": [
+        "markup.bold.markdown"
+      ],
+      "settings": {
+        "foreground": "#00ddad",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Italic",
+      "scope": [
+        "markup.italic.markdown"
+      ],
+      "settings": {
+        "foreground": "#b77ee0",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown Link Text",
+      "scope": [
+        "meta.link.inline.markdown"
+      ],
+      "settings": {
+        "foreground": "#47B5E7"
+      }
+    },
+    {
+      "name": "Markdown Link URL",
+      "scope": [
+        "markup.underline.link.markdown"
+      ],
+      "settings": {
+        "foreground": "#47B5E7",
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Markdown Inline Code Block",
+      "scope": [
+        "markup.inline.raw.string.markdown",
+        "markup.fenced_code.block.markdown",
+        "markup.raw.block.fenced.markdown"
+      ],
+      "settings": {
+        "background": "#00FF00ff",
+        "foreground": "#e06c75"
+      }
     }
   ]
 }

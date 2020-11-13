@@ -1,6 +1,4 @@
-import { editor_colours, syntax_colours, Colour } from "./colours"
-
-const fs = require("fs")
+import { editor_colours, syntax_colours, markdown_colours } from "./colours"
 
 export const generate_theme_json = () => ({
   name: "Little Yeti",
@@ -84,10 +82,57 @@ export const generate_theme_json = () => ({
         foreground: syntax_colours.control_flow,
       },
     },
+    /* Markdown */
+    {
+      name: "Markdown Heading",
+      scope: ["markup.heading.markdown"],
+      settings: {
+        foreground: markdown_colours.heading,
+        fontStyle: "bold",
+      },
+    },
+    {
+      name: "Markdown Bold",
+      scope: ["markup.bold.markdown"],
+      settings: {
+        foreground: markdown_colours.bold,
+        fontStyle: "bold",
+      },
+    },
+    {
+      name: "Markdown Italic",
+      scope: ["markup.italic.markdown"],
+      settings: {
+        foreground: markdown_colours.italics,
+        fontStyle: "italic",
+      },
+    },
+    {
+      name: "Markdown Link Text",
+      scope: ["meta.link.inline.markdown"],
+      settings: {
+        foreground: markdown_colours.link,
+      },
+    },
+    {
+      name: "Markdown Link URL",
+      scope: ["markup.underline.link.markdown"],
+      settings: {
+        foreground: markdown_colours.link,
+        fontStyle: "underline",
+      },
+    },
+    {
+      name: "Markdown Inline Code Block",
+      scope: [
+        "markup.inline.raw.string.markdown",
+        "markup.fenced_code.block.markdown",
+        "markup.raw.block.fenced.markdown",
+      ],
+      settings: {
+        background: "#00FF00ff", // broken??
+        foreground: markdown_colours.heading,
+      },
+    },
   ],
 })
-
-// fs.writeFileSync(
-//   "themes/Little Yeti-color-theme.json",
-//   JSON.stringify(genTheme())
-// )

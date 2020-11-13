@@ -54,3 +54,13 @@ export const syntax_colours: Record<Token, Colour> = {
   string: Colour.golden,
   type: Colour.turquoise,
 }
+
+type MarkdownElement = "heading" | "italics" | "bold" | "link" | "codeBg"
+
+export const markdown_colours: Record<MarkdownElement, Colour> = {
+  heading: Colour.red,
+  italics: Colour.purple,
+  bold: Colour.green,
+  link: Colour.blue,
+  codeBg: Colour.dark_grey,
+}
