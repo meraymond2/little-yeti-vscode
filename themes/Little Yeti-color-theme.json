@@ -1,0 +1,104 @@
+{
+  "name": "Little Yeti",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#383838",
+    "editor.foreground": "#bbbbbb",
+    "editor.lineHighlightBackground": "#2b2b2b",
+    "editorCursor.foreground": "#bbbbbb",
+    "editorLineNumber.foreground": "#666666",
+    "sideBar.background": "#222222",
+    "sideBar.foreground": "#bbbbbb",
+    "sideBarTitle.foreground": "#bbbbbb",
+    "statusBar.background": "#2b2b2b",
+    "statusBar.foreground": "#bbbbbb"
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": [
+        "comment"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#666666"
+      }
+    },
+    {
+      "name": "Doc Comment",
+      "scope": [
+        "comment.line.documentation"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#47B5E7"
+      }
+    },
+    {
+      "name": "Declaration Keywords",
+      "scope": [
+        "keyword.default",
+        "keyword.storage",
+        "storage.type.function"
+      ],
+      "settings": {
+        "foreground": "#e06c75"
+      }
+    },
+    {
+      "name": "Builtin",
+      "scope": [
+        "support.function.builtin"
+      ],
+      "settings": {
+        "foreground": "#00ddad"
+      }
+    },
+    {
+      "name": "String",
+      "scope": [
+        "string.quoted"
+      ],
+      "settings": {
+        "foreground": "#e5c07b"
+      }
+    },
+    {
+      "name": "Number",
+      "scope": [
+        "constant.numeric"
+      ],
+      "settings": {
+        "foreground": "#b77ee0"
+      }
+    },
+    {
+      "name": "Type",
+      "scope": [
+        "entity.name.type",
+        "keyword.type"
+      ],
+      "settings": {
+        "foreground": "#00afaf"
+      }
+    },
+    {
+      "name": "Type",
+      "scope": [
+        "keyword.operator"
+      ],
+      "settings": {
+        "foreground": "#00afaf"
+      }
+    },
+    {
+      "name": "Control Flow",
+      "scope": [
+        "keyword.control"
+      ],
+      "settings": {
+        "foreground": "#47B5E7"
+      }
+    }
+  ]
+}
