@@ -7,6 +7,9 @@
     "vscode": "^1.0.0"
   },
   "publisher": "meraymond",
+  "repository": {
+
+  },
   "categories": [
     "Themes"
   ],
