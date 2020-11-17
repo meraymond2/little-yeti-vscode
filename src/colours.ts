@@ -5,7 +5,6 @@ export enum Colour {
   medium_light_grey = "#666666",
   light_grey = "#bbbbbb",
   red = "#e06c75",
-  orange = "#e59400",
   golden = "#e5c07b",
   green = "#00ddad",
   blue = "#47B5E7",
@@ -67,5 +66,6 @@ export const markdown_colours: Record<MarkdownElement, Colour> = {
   codeBg: Colour.dark_grey,
 }
 
+export const html_attr = Colour.green
 export const data_key = Colour.red
 export const data_header = Colour.green

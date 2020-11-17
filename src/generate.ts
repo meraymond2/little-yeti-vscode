@@ -4,6 +4,8 @@ import {
   markdown_colours,
   data_header,
   data_key,
+  Colour,
+  html_attr,
 } from "./colours"
 
 export const generate_theme_json = () => ({
@@ -76,14 +78,19 @@ export const generate_theme_json = () => ({
     },
     {
       name: "Type",
-      scope: ["entity.name.type", "keyword.type", "support.type.primitive.ts"],
+      scope: [
+        "entity.name.type",
+        "keyword.type",
+        "support.type.primitive.ts",
+        "meta.type.annotation",
+      ],
       settings: {
         foreground: syntax_colours.type,
       },
     },
     {
-      name: "Type",
-      scope: ["keyword.operator", "meta.type.annotation"],
+      name: "Operator",
+      scope: ["keyword.operator"],
       settings: {
         foreground: syntax_colours.operator,
       },
@@ -93,6 +100,24 @@ export const generate_theme_json = () => ({
       scope: ["keyword.control", "keyword.operator.expression.is.ts"],
       settings: {
         foreground: syntax_colours.control_flow,
+      },
+    },
+    /* HTML/JSX */
+    {
+      name: "HTML/JSX Tag",
+      scope: ["entity.name.tag", "support.class.component.tsx"],
+      settings: {
+        foreground: syntax_colours.type,
+      },
+    },
+    {
+      name: "HTML/JSX Attribute",
+      scope: [
+        "entity.other.attribute-name.html",
+        "entity.other.attribute-name.tsx",
+      ],
+      settings: {
+        foreground: html_attr,
       },
     },
     /* Markdown */
@@ -146,7 +171,11 @@ export const generate_theme_json = () => ({
     /* json/yaml/toml */
     {
       name: "Data key",
-      scope: ["support.type.property-name.json", "entity.name.tag.yaml", "keyword.key.toml"],
+      scope: [
+        "support.type.property-name.json",
+        "entity.name.tag.yaml",
+        "keyword.key.toml",
+      ],
       settings: {
         foreground: data_key,
       },
@@ -156,7 +185,7 @@ export const generate_theme_json = () => ({
       scope: ["meta.tag.table.toml", "meta.tag.table.array.toml"],
       settings: {
         foreground: data_header,
-      }
+      },
     },
   ],
 })

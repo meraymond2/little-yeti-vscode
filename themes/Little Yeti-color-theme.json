@@ -82,17 +82,17 @@
       "scope": [
         "entity.name.type",
         "keyword.type",
-        "support.type.primitive.ts"
+        "support.type.primitive.ts",
+        "meta.type.annotation"
       ],
       "settings": {
         "foreground": "#00afaf"
       }
     },
     {
-      "name": "Type",
+      "name": "Operator",
       "scope": [
-        "keyword.operator",
-        "meta.type.annotation"
+        "keyword.operator"
       ],
       "settings": {
         "foreground": "#bbbbbb"
@@ -106,6 +106,26 @@
       ],
       "settings": {
         "foreground": "#47B5E7"
+      }
+    },
+    {
+      "name": "HTML/JSX Tag",
+      "scope": [
+        "entity.name.tag",
+        "support.class.component.tsx"
+      ],
+      "settings": {
+        "foreground": "#00afaf"
+      }
+    },
+    {
+      "name": "HTML/JSX Attribute",
+      "scope": [
+        "entity.other.attribute-name.html",
+        "entity.other.attribute-name.tsx"
+      ],
+      "settings": {
+        "foreground": "#00ddad"
       }
     },
     {
