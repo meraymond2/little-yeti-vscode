@@ -2,7 +2,8 @@ import {
   editor_colours,
   syntax_colours,
   markdown_colours,
-  json_key,
+  data_header,
+  data_key,
 } from "./colours"
 
 export const generate_theme_json = () => ({
@@ -142,13 +143,20 @@ export const generate_theme_json = () => ({
         foreground: markdown_colours.heading,
       },
     },
-    /* JSON */
+    /* json/yaml/toml */
     {
-      name: "JSON key",
-      scope: ["support.type.property-name.json"],
+      name: "Data key",
+      scope: ["support.type.property-name.json", "entity.name.tag.yaml", "keyword.key.toml"],
       settings: {
-        foreground: json_key,
+        foreground: data_key,
       },
+    },
+    {
+      name: "Data header",
+      scope: ["meta.tag.table.toml", "meta.tag.table.array.toml"],
+      settings: {
+        foreground: data_header,
+      }
     },
   ],
 })

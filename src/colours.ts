@@ -67,4 +67,5 @@ export const markdown_colours: Record<MarkdownElement, Colour> = {
   codeBg: Colour.dark_grey,
 }
 
-export const json_key = Colour.blue
+export const data_key = Colour.red
+export const data_header = Colour.green

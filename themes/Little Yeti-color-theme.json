@@ -168,12 +168,24 @@
       }
     },
     {
-      "name": "JSON key",
+      "name": "Data key",
       "scope": [
-        "support.type.property-name.json"
+        "support.type.property-name.json",
+        "entity.name.tag.yaml",
+        "keyword.key.toml"
       ],
       "settings": {
-        "foreground": "#47B5E7"
+        "foreground": "#e06c75"
+      }
+    },
+    {
+      "name": "Data header",
+      "scope": [
+        "meta.tag.table.toml",
+        "meta.tag.table.array.toml"
+      ],
+      "settings": {
+        "foreground": "#00ddad"
       }
     }
   ]
