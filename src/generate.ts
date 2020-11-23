@@ -187,5 +187,13 @@ export const generate_theme_json = () => ({
         foreground: data_header,
       },
     },
+    /* Docker */
+    {
+      name: "Dockerfile keyword",
+      scope: ["keyword.other.special-method.dockerfile"],
+      settings: {
+        foreground: syntax_colours.builtin,
+      },
+    },
   ],
 })

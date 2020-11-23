@@ -207,6 +207,15 @@
       "settings": {
         "foreground": "#00ddad"
       }
+    },
+    {
+      "name": "Dockerfile keyword",
+      "scope": [
+        "keyword.other.special-method.dockerfile"
+      ],
+      "settings": {
+        "foreground": "#00ddad"
+      }
     }
   ]
 }
