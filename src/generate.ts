@@ -4,7 +4,6 @@ import {
   markdown_colours,
   data_header,
   data_key,
-  Colour,
   html_attr,
 } from "./colours"
 
@@ -46,6 +45,7 @@ export const generate_theme_json = () => ({
       scope: [
         "keyword.default",
         "keyword.operator.new",
+        "keyword.other.julia",
         "keyword.storage",
         "storage.modifier",
         "storage.type",

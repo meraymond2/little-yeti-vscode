@@ -10,6 +10,9 @@
   "categories": [
     "Themes"
   ],
+  "repository": {
+    "url": "https://github.com/meraymond2/little-yeti-vscode"
+  },
   "contributes": {
     "themes": [
       {
